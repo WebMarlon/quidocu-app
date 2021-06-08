@@ -40,6 +40,17 @@ body{
 .section-title h2 span{
   color: var(--black-900);
 }
+.section-title p{
+  text-align: center;
+}
+.section-title p span{
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.palabraBusqueda{
+  text-align: center;
+}
 /*---------------
 NavBar
 ----------------*/
@@ -157,6 +168,12 @@ Lo mas buscado
 .ima-servisios img{
   height: 150px;
   margin: 0;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+.ima-servisios .imaServicios:hover{
+  animation: heartBeat;
+  animation-duration: 2s;
 }
 .ima-servisios h2{
   font-size: 22px;
