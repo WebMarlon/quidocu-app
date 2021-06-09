@@ -177,7 +177,7 @@ Lo mas buscado
 }
 .ima-servisios h2 {
   font-size: 22px;
-  weight: 200;
+  font-weight: 200;
   margin: 20px;
   color: var(--main-color);
 }
