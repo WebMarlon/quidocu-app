@@ -1,0 +1,62 @@
+/* 
+  Autocomplete
+*/
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 25%;
+  right: 0;
+  width: 60%;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.autocomplete-items div:last-child {
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  border: none !important;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: var(--light-color) !important;
+  color: black;
+}
+
+.autocomplete-results {
+  min-width: 0px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0.5rem 0rem 0.5rem 2rem;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  position: absolute;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  transition: all ease 40s;
+  background-color: red !important;
+}
+
+.autocomplete-results:last-child {
+  background-color: red !important;
+}
