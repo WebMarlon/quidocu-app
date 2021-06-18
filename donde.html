@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Quidocu</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/favicon.png"/>
+      <!-- font awesome icons -->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <!-- quidocu icons -->
+      <link rel="stylesheet" href="css/quidocu-icons.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   </head>
+   <body>
+    <!-- IDEA: NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">QUIDOCU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Noxotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empezar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- IDEA: NavBar -->
+    <!-- IDEA: Home -->
+    <section class="quien d-flex align-items-center">
+      <div class="container">
+        <div class="row iconos-social d-none d-sm-block">
+          <a class="href" href="#"><span class="icon icon-fb-quidocu-icon socila-icons"></span></a>
+          <a class="href" href="#"><span class="icon icon-ig-quidocu-icon socila-icons"></span></a>
+          <a class="href" href="#"><span class="icon icon-whatsapp-quidocu-icon socila-icons"></span></a>
+          <a class="href" href="#"><span class="icon icon-youtube-quidocu-icon socila-icons"></span></a>
+          <a class="href" href="#"><span class="icon icon-tw-quidocu-icon socila-icons"></span></a>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="itemQuien col-lg-5 col-md-6 col-sm-6 col-12">
+            <img src="images/servicios/mapa.svg" alt="Quien puede hacerlo?">
+            <h1><span>QUI</span>DO<span>CU</span></h1>
+            <p>¿EN DÓNDE LO NECESITAS?</p>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-12">
+            <div class="contact-form">
+              <form action="" method="">
+                <div class="form-group">
+                  <a class="href" href="#" data-toggle="modal" data-target="#exampleModal">Agregar dirección</a>
+                </div>
+                <div class="form-group">
+                  <i class="fas fa-angle-down inputDonde"></i>
+                  <select class="form-control inputSelect" name="" id="">
+                    <option value="">En que dirección queires tu servicio:</option>
+                    <option value="Casa">Mi casa</option>
+                    <option value="Apartamento">Casa mamá</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <i class="far fa-calendar-alt inputDonde"></i>
+                  <input class="form-control" type="text" name="" value="" placeholder="Input data time">
+                </div>
+                <div class="form-group">
+                  <a href="#" class="btn-2 btn-block">Siguiente</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar dirección</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="ubicacion-form">
+                  <form class="" action="index.html" method="post">
+                    <div class="form-group">
+                      <i class="fas fa-search inputDonde"></i>
+                      <input class="form-control" type="text" name="" value="" placeholder="Ingresa tu dirección completa">
+                    </div>
+                    <iframe class="iframeUbicacion"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30879.263057814347!2d-90.5096182604492!3d14.661168849999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1623856910834!5m2!1ses-419!2sgt" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="form-group">
+                      <i class="fas fa-angle-down inputDonde"></i>
+                      <select class="form-control inputSelect" name="" id="">
+                        <option value="">Tipo de dirección:</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Oficina">Oficina</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="" value="" placeholder="Nombre de la dirección">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="name" rows="8" cols="80" placeholder="Instrucciones para el socio, Si es necesario, amplie su dirección,Ingrese código de acceso a garita, o de referencias del domicilio. 🙂"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn-3" data-dismiss="modal">Cerrar</a>
+                <a href="#" class="btn-2">Agregar Dirección</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- IDEA: Home -->
+    <!-- date time -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+      <!-- jquery js -->
+      <script src="js/jquery.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- main js -->
+      <script src="js/main.js"></script>
+
+   </body>
+
+</html>
