@@ -254,6 +254,17 @@ Banner
   transition: all 0.5s ease;
   font-weight: 200;
 }
+.btn-4 {
+  background-color: var(--main-color);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 30px;
+  color: var(--black-000);
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: 200;
+}
 .btn-1:hover {
   color: var(--black-000);
   background-color: var(--main-color);
@@ -263,6 +274,10 @@ Banner
   background-color: var(--black-900);
 }
 .btn-3:hover {
+  color: var(--black-000);
+  background-color: var(--black-900);
+}
+.btn-4:hover {
   color: var(--black-000);
   background-color: var(--black-900);
 }
@@ -501,6 +516,53 @@ input[type="file"] {
   font-size: 30px;
 }
 /*---------------
+cardCuanto
+----------------*/
+.cardCuanto {
+    background-color: var(--black-000);
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.nameCuanto{
+  font-size: 12px;
+  font-weight: 700;
+}
+.textCuanto {
+  margin-top: -6px;
+  font-size: 10px;
+  font-weight: 200;
+  color: var(--black-400);
+}
+.textCuanto span{
+  color: var(--main-color);
+  font-weight: 700;
+}
+.textCuanto .href{
+  text-decoration: none;
+}
+.hour {
+    margin-top: 1px;
+    font-size: 11px;
+}
+.ratings {
+  font-size: 11px;
+}
+.ratings i {
+    color: var(--main-color);
+}
+.experienciaCuanto i {
+  color: var(--main-color);
+}
+.tomarOferta {
+  margin-right: 10px;
+}
+.cuantoOferta {
+  animation: fadeInRight;
+  animation-duration: 2s;
+}
+/*---------------
 Responsive
 ----------------*/
 @media (max-width: 991px) {
@@ -612,3 +674,4 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
+@ @@
