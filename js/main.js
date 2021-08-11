@@ -16,3 +16,11 @@ function init() {
 function ocultar(){
   document.getElementById('VideoPlayer').style.visibility='hidden';
 };
+//-- abre modal NuevoFacturacion --//
+function myFunction() {
+var option_value = document.getElementById("newAdd").value;
+if (option_value == "addNew") {
+  //  alert("Hai !");
+   $("#exampleModal").modal();
+ }
+}

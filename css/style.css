@@ -570,6 +570,20 @@ cardCuanto
   font-weight: 400;
 }
 /*---------------
+Ingreso metodoPago
+----------------*/
+.contact-form h3{
+  color: var(--main-color);
+  text-align: center;
+  weight: 700;
+  margin-bottom: 30px;
+}
+.contact-form small{
+  color: var(--black-400);
+  weight: 200;
+  font-size: 18px;
+}
+/*---------------
 Responsive
 ----------------*/
 @media (max-width: 991px) {
@@ -681,4 +695,3 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
-@ @@
