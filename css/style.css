@@ -584,6 +584,55 @@ Ingreso metodoPago
   font-size: 18px;
 }
 /*---------------
+Login
+----------------*/
+.card{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(255,255,255) !important;
+  }
+.social_icon{
+  position: absolute;
+  right: 22px;
+  top: -28px;
+  }
+.social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: var(--main-color);
+  }
+.social_icon span:hover{
+  color: var(--black-900);
+  cursor: pointer;
+  }
+.card-header h3{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black-400);
+  }
+.input-group-prepend span{
+  width: 50px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: var(--black-000);
+  border:0 !important;
+  }
+.input-group-prepend i{
+  margin-left: 8px;
+}
+.remember{
+  color: var(--black-400);
+  font-weight: 400;
+  margin-bottom: 20px;
+  }
+.remember input{
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  margin-right:5px;
+  }
+/*---------------
 Responsive
 ----------------*/
 @media (max-width: 991px) {
