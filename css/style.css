@@ -235,17 +235,6 @@ Banner
   transition: all 0.5s ease;
   font-weight: 200;
 }
-.btn-4 {
-  background-color: var(--main-color);
-  padding: 5px 15px;
-  border: none;
-  border-radius: 30px;
-  color: var(--black-000);
-  font-size: 12px;
-  text-align: center;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
 .btn-1:hover {
   color: var(--black-000);
   background-color: var(--main-color);
@@ -255,10 +244,6 @@ Banner
   background-color: var(--black-900);
 }
 .btn-3:hover {
-  color: var(--black-000);
-  background-color: var(--black-900);
-}
-.btn-4:hover {
   color: var(--black-000);
   background-color: var(--black-900);
 }
@@ -349,7 +334,7 @@ Footer
   background-color: var(--black-900);
   font-size: 14px;
   color: var(--black-000);
-  padding: 30px 0 30px 0;
+  padding-top: 30px;
 }
 .footerQuidocu h3 {
   font-size: 16px;
@@ -459,6 +444,7 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
 .contact-form .form-control {
   height: 52px;
   border: 1px solid transparent;
@@ -496,6 +482,7 @@ input[type="file"] {
   color: var(--main-color);
   font-size: 30px;
 }
+
 /*---------------
 cardCuanto
 ----------------*/
@@ -549,6 +536,119 @@ cardCuanto
 .contenedorOferta h3 {
   color: var(--main-color);
   font-weight: 400;
+}
+
+/*---------------
+Responsive
+----------------*/
+@media (max-width: 991px) {
+  .navbar-toggler {
+    height: 34px;
+    width: 44px;
+    padding: 0;
+    font-size: 16px;
+    color: var(--black-000);
+  }
+  .navbar .nav-item {
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .iconos-social {
+    position: absolute;
+    left: 145px;
+  }
+  .image-home img {
+    width: 80%;
+  }
+  .buscar {
+    margin: 0;
+  }
+  .buscar input {
+    height: 70px;
+    width: 700px;
+  }
+  .iconoInput {
+    position: absolute;
+    left: 50px;
+    padding-top: 20px;
+  }
+  .ima-servisios img {
+    height: 120px;
+  }
+  .ima-servisios h2 {
+    font-size: 18px;
+  }
+  .bannerText {
+    padding: 60px 0 0 0;
+  }
+  .bannerText h1 {
+    font-size: 30px;
+  }
+  .bannerText p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    min-width: 100%;
+  }
+  .iconos-social {
+    position: absolute;
+    left: 30px;
+  }
+  .iconoInput {
+    position: absolute;
+    left: 70px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .iconos-social {
+    left: 25px;
+  }
+  .image-home {
+    text-align: center;
+    justify-content: center;
+  }
+  .image-home img {
+    width: 80%;
+    padding: 100px 0 30px 0;
+    text-align: center;
+  }
+  .titulo-home h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .buscar input {
+    height: 50px;
+    width: 95%;
+    padding: 0 0 0 50px;
+  }
+  .iconoInput {
+    padding-top: 10px;
+    left: 40px;
+  }
+  .section-padding {
+    padding: 70px 0 0 0;
+  }
+  .ima-servisios img {
+    height: 155px;
+    margin: 0;
+  }
+  .footerQuidocu {
+    font-size: 11px;
+  }
+  .footerQuidocu h3 {
+    font-size: 13px;
+  }
+  .footerQuidocu ul li a {
+    line-height: 20px;
+  }
+  .quien {
+    padding: 70px 0px 0px 0px;
+  }
 }
 /*---------------
 Ingreso metodoPago
