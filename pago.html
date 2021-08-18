@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Quidocu</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/favicon.png"/>
+      <!-- font awesome icons -->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <!-- quidocu icons -->
+      <link rel="stylesheet" href="css/quidocu-icons.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+   </head>
+   <body>
+      <!-- IDEA: NavBar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">QUIDOCU</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Noxotros</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Empezar</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- IDEA: NavBar -->
+      <!-- IDEA: Home -->
+      <section class="quien d-flex align-items-center">
+         <div class="container">
+         <div class="row iconos-social d-none d-sm-block">
+            <a class="href" href="#"><span class="icon icon-fb-quidocu-icon socila-icons"></span></a>
+            <a class="href" href="#"><span class="icon icon-ig-quidocu-icon socila-icons"></span></a>
+            <a class="href" href="#"><span class="icon icon-whatsapp-quidocu-icon socila-icons"></span></a>
+            <a class="href" href="#"><span class="icon icon-youtube-quidocu-icon socila-icons"></span></a>
+            <a class="href" href="#"><span class="icon icon-tw-quidocu-icon socila-icons"></span></a>
+         </div>
+         <div class="row align-items-center justify-content-center">
+            <div class="itemQuien col-lg-5">
+               <img src="images/servicios/cuanto.svg" alt="¿Cuanto cuesta?">
+               <h1><span>QUIDO</span>CU</h1>
+               <p>¿CUÁNTO CUESTA?</p>
+            </div>
+            <div class="col-lg-6">
+               <div class="contact-form">
+                  <div class="row">
+                     <div class="col-6">
+                        <div class="form-group">
+                           <i class="fas fa-angle-down inputDonde"></i>
+                           <select class="form-control" id = "newAdd" onchange = "myFunction()">
+                              <option value="">Factura a nombre de:</option>
+                              <option value="Titular">Marlon Molina</option>
+                              <option value="addNew">Agregar nuevo</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-6">
+                        <div class="form-group">
+                           <input class="form-control" type="text" name="" value="" placeholder="Imprimir: Nit: 3816450-7">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <i class="fas fa-angle-down inputDonde"></i>
+                     <select class="form-control" name="" id="">
+                        <option value="100%">Pagar el 100%</option>
+                        <option value="50%">Pagar el 50%</option>
+                        <option value="50%">Pagar el 25%</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                    <h3>Q150.00 <small>es el <b>100%</b> del valor del servicio que necesitas</small></h3><hr>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                       <div class="form-group">
+                          <i class="fas fa-angle-down inputDonde"></i>
+                          <select class="form-control" name="" id="">
+                             <option value="">Elije tu tarjeta</option>
+                             <option value="Visa">Visa</option>
+                             <option value="Master Card">Master Card</option>
+                             <option value="Master Card">American Express</option>
+                          </select>
+                       </div>
+                    </div>
+                     <div class="col-6">
+                        <img src="images/TarjetasPago_Logos.png" height="50"></img>
+                     </div>
+                  </div>
+                  <!-- <div class="row">
+                     <div class="col-6">
+                        <div id="card-dropdown">
+                           <div class="dropdown-btn" id="current-card">Visa</div>
+                           <div class="dropdown-select">
+                              <ul>
+                                 <li>Master Card</li>
+                                 <li>American Express</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-6">
+                        <img src="images/visa_Logo.png" height="80" class="credit-card-image" id="credit-card-image"></img>
+                     </div>
+                  </div>-->
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="" placeholder="Numero de tarjeta">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="" placeholder="Titular de la tarjeta">
+                  </div>
+                  <div class="row">
+                     <div class="col-7">
+                       <div class="form-group">
+                         <input class="form-control" type="text" name="" value="" placeholder="Fecha de vencimiento">
+                       </div>
+                     </div>
+                     <div class="col-5">
+                       <div class="form-group">
+                         <input class="form-control" type="text" name="" value="" placeholder="CVC">
+                       </div>
+                     </div>
+                  </div>
+                  <button class="btn-2 btn-block">Pagar</button>
+               </div>
+            </div>
+         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Agregar datos de facturación</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="ubicacion-form">
+                        <form class="" action="index.html" method="post">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="" value="" placeholder="Numero de Nit.">
+                           </div>
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="" value="" placeholder="Nombre">
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <a href="#" class="btn-3" data-dismiss="modal">Cerrar</a>
+                     <a href="#" class="btn-2">Agregar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- IDEA: Home -->
+      <!-- jquery js -->
+      <script src="js/jquery.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- main js -->
+      <script src="js/main.js"></script>
+   </body>
+</html>

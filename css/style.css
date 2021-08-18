@@ -56,7 +56,6 @@ NavBar
 ----------------*/
 .navbar {
   background-color: var(--main-color);
-
 }
 .navbar > container {
   padding: 0 15px;
@@ -194,27 +193,9 @@ Banner
 ----------------*/
 .bannerColor {
   background: #ffffff;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   padding: 30px;
 }
@@ -434,12 +415,12 @@ Quien
 /*---------------
 Form
 ----------------*/
-.form-group .href{
+.form-group .href {
   text-decoration: none;
   margin: 21px;
   color: var(--main-color);
 }
-.form-group .href:hover{
+.form-group .href:hover {
   font-weight: 700;
 }
 .contact-form {
@@ -447,7 +428,7 @@ Form
   animation: fadeInRight;
   animation-duration: 2s;
 }
-.ubicacion-form{
+.ubicacion-form {
   margin-bottom: 20px;
 }
 .ubicacion-form .form-control {
@@ -467,13 +448,13 @@ Form
   padding-top: 12px;
   resize: none;
 }
-.iframeUbicacion{
+.iframeUbicacion {
   width: 100%;
   height: 150px;
   border-radius: 30px;
   margin-bottom: 10px;
 }
-select{
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -519,13 +500,13 @@ input[type="file"] {
 cardCuanto
 ----------------*/
 .cardCuanto {
-    background-color: var(--black-000);
-    border-radius: 30px;
-    padding: 15px;
-    margin-bottom: 12px;
-    margin-top: 12px;
+  background-color: var(--black-000);
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
-.nameCuanto{
+.nameCuanto {
   font-size: 12px;
   font-weight: 700;
 }
@@ -535,21 +516,21 @@ cardCuanto
   font-weight: 200;
   color: var(--black-400);
 }
-.textCuanto span{
+.textCuanto span {
   color: var(--main-color);
   font-weight: 700;
 }
-.textCuanto .href{
+.textCuanto .href {
   text-decoration: none;
 }
 .hour {
-    font-size: 11px;
+  font-size: 11px;
 }
 .ratings {
   font-size: 11px;
 }
 .ratings i {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 .experienciaCuanto i {
   color: var(--main-color);
@@ -560,14 +541,77 @@ cardCuanto
 .contenedorOferta {
   padding-right: 40px;
   height: 500px;
-	border: 0;
-	overflow-y: scroll;
+  border: 0;
+  overflow-y: scroll;
   animation: fadeInRight;
   animation-duration: 2s;
 }
-.contenedorOferta h3{
+.contenedorOferta h3 {
   color: var(--main-color);
   font-weight: 400;
+}
+/*---------------
+Ingreso metodoPago
+----------------*/
+.contact-form h3 {
+  color: var(--main-color);
+  text-align: center;
+  weight: 700;
+  margin-bottom: 30px;
+}
+.contact-form small {
+  color: var(--black-400);
+  weight: 200;
+  font-size: 18px;
+}
+/*---------------
+Login
+----------------*/
+.card {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(255, 255, 255) !important;
+}
+.social_icon {
+  position: absolute;
+  right: 22px;
+  top: -28px;
+}
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.social_icon span:hover {
+  color: var(--black-900);
+  cursor: pointer;
+}
+.card-header h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black-400);
+}
+.input-group-prepend span {
+  width: 50px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: var(--black-000);
+  border: 0 !important;
+}
+.input-group-prepend i {
+  margin-left: 8px;
+}
+.remember {
+  color: var(--black-400);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  margin-right: 5px;
 }
 /*---------------
 Responsive
@@ -577,7 +621,7 @@ Responsive
     height: 34px;
     width: 44px;
     padding: 0;
-    sont-size: 16px;
+    font-size: 16px;
     color: var(--black-000);
   }
   .navbar .nav-item {
@@ -681,4 +725,3 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
-
