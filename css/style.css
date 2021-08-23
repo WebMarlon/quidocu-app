@@ -193,27 +193,9 @@ Banner
 ----------------*/
 .bannerColor {
   background: #ffffff;
-  background: -moz-linear-gradient(
-    top,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff 25%,
-    #000000 25%,
-    #000000 99%
-  );
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   padding: 30px;
 }
@@ -253,17 +235,6 @@ Banner
   transition: all 0.5s ease;
   font-weight: 200;
 }
-.btn-4 {
-  background-color: var(--main-color);
-  padding: 5px 15px;
-  border: none;
-  border-radius: 30px;
-  color: var(--black-000);
-  font-size: 12px;
-  text-align: center;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
 .btn-1:hover {
   color: var(--black-000);
   background-color: var(--main-color);
@@ -273,10 +244,6 @@ Banner
   background-color: var(--black-900);
 }
 .btn-3:hover {
-  color: var(--black-000);
-  background-color: var(--black-900);
-}
-.btn-4:hover {
   color: var(--black-000);
   background-color: var(--black-900);
 }
@@ -367,7 +334,7 @@ Footer
   background-color: var(--black-900);
   font-size: 14px;
   color: var(--black-000);
-  padding: 30px 0 30px 0;
+  padding-top: 30px;
 }
 .footerQuidocu h3 {
   font-size: 16px;
@@ -433,12 +400,12 @@ Quien
 /*---------------
 Form
 ----------------*/
-.form-group .href{
+.form-group .href {
   text-decoration: none;
   margin: 21px;
   color: var(--main-color);
 }
-.form-group .href:hover{
+.form-group .href:hover {
   font-weight: 700;
 }
 .contact-form {
@@ -446,7 +413,7 @@ Form
   animation: fadeInRight;
   animation-duration: 2s;
 }
-.ubicacion-form{
+.ubicacion-form {
   margin-bottom: 20px;
 }
 .ubicacion-form .form-control {
@@ -466,17 +433,18 @@ Form
   padding-top: 12px;
   resize: none;
 }
-.iframeUbicacion{
+.iframeUbicacion {
   width: 100%;
   height: 150px;
   border-radius: 30px;
   margin-bottom: 10px;
 }
-select{
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
+
 .contact-form .form-control {
   height: 52px;
   border: 1px solid transparent;
@@ -514,17 +482,18 @@ input[type="file"] {
   color: var(--main-color);
   font-size: 30px;
 }
+
 /*---------------
 cardCuanto
 ----------------*/
 .cardCuanto {
-    background-color: var(--black-000);
-    border-radius: 30px;
-    padding: 15px;
-    margin-bottom: 12px;
-    margin-top: 12px;
+  background-color: var(--black-000);
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
-.nameCuanto{
+.nameCuanto {
   font-size: 12px;
   font-weight: 700;
 }
@@ -534,21 +503,21 @@ cardCuanto
   font-weight: 200;
   color: var(--black-400);
 }
-.textCuanto span{
+.textCuanto span {
   color: var(--main-color);
   font-weight: 700;
 }
-.textCuanto .href{
+.textCuanto .href {
   text-decoration: none;
 }
 .hour {
-    font-size: 11px;
+  font-size: 11px;
 }
 .ratings {
   font-size: 11px;
 }
 .ratings i {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 .experienciaCuanto i {
   color: var(--main-color);
@@ -559,78 +528,16 @@ cardCuanto
 .contenedorOferta {
   padding-right: 40px;
   height: 500px;
-	border: 0;
-	overflow-y: scroll;
+  border: 0;
+  overflow-y: scroll;
   animation: fadeInRight;
   animation-duration: 2s;
 }
-.contenedorOferta h3{
+.contenedorOferta h3 {
   color: var(--main-color);
   font-weight: 400;
 }
-/*---------------
-Ingreso metodoPago
-----------------*/
-.contact-form h3{
-  color: var(--main-color);
-  text-align: center;
-  weight: 700;
-  margin-bottom: 30px;
-}
-.contact-form small{
-  color: var(--black-400);
-  weight: 200;
-  font-size: 18px;
-}
-/*---------------
-Login
-----------------*/
-.card{
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 400px;
-  background-color: rgba(255,255,255) !important;
-  }
-.social_icon{
-  position: absolute;
-  right: 22px;
-  top: -28px;
-  }
-.social_icon span{
-  font-size: 60px;
-  margin-left: 10px;
-  color: var(--main-color);
-  }
-.social_icon span:hover{
-  color: var(--black-900);
-  cursor: pointer;
-  }
-.card-header h3{
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--black-400);
-  }
-.input-group-prepend span{
-  width: 50px;
-  border-radius: 30px;
-  background-color: var(--main-color);
-  color: var(--black-000);
-  border:0 !important;
-  }
-.input-group-prepend i{
-  margin-left: 8px;
-}
-.remember{
-  color: var(--black-400);
-  font-weight: 400;
-  margin-bottom: 20px;
-  }
-.remember input{
-  width: 20px;
-  height: 20px;
-  margin-left: 25px;
-  margin-right:5px;
-  }
+
 /*---------------
 Responsive
 ----------------*/
@@ -639,7 +546,182 @@ Responsive
     height: 34px;
     width: 44px;
     padding: 0;
-    sont-size: 16px;
+    font-size: 16px;
+    color: var(--black-000);
+  }
+  .navbar .nav-item {
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .iconos-social {
+    position: absolute;
+    left: 145px;
+  }
+  .image-home img {
+    width: 80%;
+  }
+  .buscar {
+    margin: 0;
+  }
+  .buscar input {
+    height: 70px;
+    width: 700px;
+  }
+  .iconoInput {
+    position: absolute;
+    left: 50px;
+    padding-top: 20px;
+  }
+  .ima-servisios img {
+    height: 120px;
+  }
+  .ima-servisios h2 {
+    font-size: 18px;
+  }
+  .bannerText {
+    padding: 60px 0 0 0;
+  }
+  .bannerText h1 {
+    font-size: 30px;
+  }
+  .bannerText p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    min-width: 100%;
+  }
+  .iconos-social {
+    position: absolute;
+    left: 30px;
+  }
+  .iconoInput {
+    position: absolute;
+    left: 70px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .iconos-social {
+    left: 25px;
+  }
+  .image-home {
+    text-align: center;
+    justify-content: center;
+  }
+  .image-home img {
+    width: 80%;
+    padding: 100px 0 30px 0;
+    text-align: center;
+  }
+  .titulo-home h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .buscar input {
+    height: 50px;
+    width: 95%;
+    padding: 0 0 0 50px;
+  }
+  .iconoInput {
+    padding-top: 10px;
+    left: 40px;
+  }
+  .section-padding {
+    padding: 70px 0 0 0;
+  }
+  .ima-servisios img {
+    height: 155px;
+    margin: 0;
+  }
+  .footerQuidocu {
+    font-size: 11px;
+  }
+  .footerQuidocu h3 {
+    font-size: 13px;
+  }
+  .footerQuidocu ul li a {
+    line-height: 20px;
+  }
+  .quien {
+    padding: 70px 0px 0px 0px;
+  }
+}
+/*---------------
+Ingreso metodoPago
+----------------*/
+.contact-form h3 {
+  color: var(--main-color);
+  text-align: center;
+  weight: 700;
+  margin-bottom: 30px;
+}
+.contact-form small {
+  color: var(--black-400);
+  weight: 200;
+  font-size: 18px;
+}
+/*---------------
+Login
+----------------*/
+.card {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(255, 255, 255) !important;
+}
+.social_icon {
+  position: absolute;
+  right: 22px;
+  top: -28px;
+}
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.social_icon span:hover {
+  color: var(--black-900);
+  cursor: pointer;
+}
+.card-header h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black-400);
+}
+.input-group-prepend span {
+  width: 50px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: var(--black-000);
+  border: 0 !important;
+}
+.input-group-prepend i {
+  margin-left: 8px;
+}
+.remember {
+  color: var(--black-400);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+/*---------------
+Responsive
+----------------*/
+@media (max-width: 991px) {
+  .navbar-toggler {
+    height: 34px;
+    width: 44px;
+    padding: 0;
+    font-size: 16px;
     color: var(--black-000);
   }
   .navbar .nav-item {
