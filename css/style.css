@@ -537,7 +537,116 @@ cardCuanto
   color: var(--main-color);
   font-weight: 400;
 }
+/*---------------
+ofertaSocio
+----------------*/
+.cardHeader{
+  background-color: var(--main-color);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 60px;
+}
+.profile{
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  max-width: 70px;
+}
+.badge{
+  background-color: var(--main-color);
+  color: var(--black-000);
+  position: relative;
+  z-index: 1;
+  top: -75px;
+  left: 40px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  height: 25px;
+}
+.card-body{
+  background-color: var(--black-000);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.card-body i{
+  position: relative;
+  top: 2px;
+}
+.socioName{
+  position: relative;
+  left: 95px;
+  top: 5px;
+  color: var(--black-000);
+  font-weight: 700;
+  font-size: 25px;
+}
+.verificadoSocio{
+  position: relative;
+  left: 95px;
+  top: 0px;
+  color: var(--black-000);
+  font-size: 10px;
+}
+.ratingSocio{
+  text-align: right;
+  color: var(--black-000);
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  right: 15px;
+}
+.detalleSocio{
+  position: relative;
+  top: -10px;
+}
+.ofertaPrecio{
+  position: relative;
+  top: -25px;
+  text-align: center;
+  font-weight: 700;
+}
+.ofertaPrecio-1{
+  color: var(--main-color);
+  position: relative;
+  top: 5px;
+}
+.ofertaPrecio-2{
+  color: var(--main-color);
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+}
+.botonesOferta{
+  position: relative;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+}
+.modal-content  {
+  -webkit-border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  border-radius: 30px !important;
+}
+.modal-header{
+  background-color: var(--main-color);
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+  height: 140px;
 
+}
+.imgModal{
+  position: relative;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+}
+.avatarProfile{
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  display: flex;
+  align-items: center;
 /*---------------
 Responsive
 ----------------*/
@@ -825,3 +934,4 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
+@ @@
