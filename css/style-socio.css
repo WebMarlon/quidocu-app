@@ -186,8 +186,46 @@ Sidebar
   padding-right: 5px;
 }
 /*---------------
-Switch
+OfertasAbiertas
 ----------------*/
+.ofertasAbiertas {
+  margin: 10px;
+  padding: 12px;
+  background-color: var(--black-900);
+  border-radius: 30px;
+  font-size: 12px;
+  color: var(--black-000);
+}
+.ofertasAbiertas img{
+  height: 80px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.ofertasAbiertas h1{
+  font-size: 27px;
+  margin: 0;
+}
+.ofertasAbiertas i{
+  color: var(--main-color);
+  font-size: 30px;
+}
+.ofertasAbiertas h5{
+  color: var(--main-color);
+  margin: 0;
+}
+.ofertasAbiertas button{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.descripcionOferta {
+  border-left: 2px solid white;
+}
 /*---------------
 Footer
 ----------------*/
@@ -543,3 +581,4 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
+@ @@
