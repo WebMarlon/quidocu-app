@@ -193,8 +193,6 @@ OfertasAbiertas
   padding: 12px;
   background-color: var(--black-900);
   border-radius: 30px;
-  font-size: 12px;
-  color: var(--black-000);
 }
 .ofertasAbiertas img{
   height: 80px;
@@ -210,7 +208,8 @@ OfertasAbiertas
 }
 .ofertasAbiertas i{
   color: var(--main-color);
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 8px;
 }
 .ofertasAbiertas h5{
   color: var(--main-color);
@@ -225,6 +224,8 @@ OfertasAbiertas
 }
 .descripcionOferta {
   border-left: 2px solid white;
+  font-size: 12px;
+  color: var(--black-000);
 }
 /*---------------
 Footer
