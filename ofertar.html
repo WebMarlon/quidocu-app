@@ -96,31 +96,92 @@
                </div>
                <section>
                  <div class="container">
-                   <div class="row ofertasAbiertas">
-                     <div class="col-lg-2 col-md-1">
-                       <img src="images/favicon.png" alt="Quidocu">
-                     </div>
-                     <div class="col-lg-5 col-md-5 descripcionOferta">
-                       <h1>Descripcion</h1>
-                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-                     </div>
-                     <div class="col-lg-1 d-flex align-items-center">
-                       <center><i class="fas fa-map-marker-alt"></i><h5>Zona 1</h5></center>
-                     </div>
-                     <div class="col-lg-1 d-flex align-items-center">
-                       <center><h5>NOV</h5><h5>05</h5></center>
-                     </div>
-                     <div class="col-lg-1 d-flex align-items-center">
-                       <center><i class="fas fa-clock"></i><h5>10:30</h5></center>
-                     </div>
-                     <div class="col-lg-2">
-                       <button class="btn-2 btn-block" type="button" onclick="location.href='ofertar.html'">Ver detalle</button>
-                     </div>
-                   </div>
+                   <div class="row justify-content-center">
+                    <div class="col-lg-5 col-sm-12 ofertarCaja">
+                      <div class="headerOfertar">
+                        <img src="images/socios/01.jpeg" alt="profile-image" class="profile"/>
+                        <span class="badge rounded-circle"><i class="fas fa-check"></i></span>
+                        <h3>Hola Mario</h3>
+                        <p>Realiza una oferta para este servicio</p>
+                      </div>
+                      <div class="bodyOfertar">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="row detalleOfertar d-flex align-items-center">
+                          <div class="col">
+                            <center><i class="fas fa-map-marker-alt"></i><h5>Zona 1</h5></center>
+                          </div>
+                          <div class="col">
+                            <center><h5>NOV</h5><h5>05</h5></center>
+                          </div>
+                          <div class="col">
+                            <center><i class="fas fa-clock"></i><h5>10:30</h5></center>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <img id="myImg" src="images/quidocus/enchufe-quemado.jpeg" alt="" style="width:100%;max-width:300px">
+                          </div>
+                          <div class="col">
+                            <img id="myImg" src="images/quidocus/enchufe-quemado.jpeg" alt="Snow" style="width:100%;max-width:300px">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 ofertarCajaW">
+                      <h2>Ofertar</h2>
+                      <form class="" action="" method="post">
+                        <div class="ubicacion-form">
+                          <input class="form-control" type="text" name="" value="" placeholder="Q100.00">
+                        </div>
+                        <div class="row align-items-center remember">
+              						<input type="checkbox">Incluye materiales
+              					</div>
+                      </form>
+                      <div class="row d-flex align-items-center">
+                        <div class="col">
+                          <p>Factura</p>
+                        </div>
+                        <div class="col">
+                          <div class="ubicacion-form">
+                            <input class="form-control" type="text" name="" value="" placeholder="Q17.00">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-flex align-items-center">
+                        <div class="col">
+                          <p>Comision</p>
+                        </div>
+                        <div class="col">
+                          <div class="ubicacion-form">
+                            <input class="form-control" type="text" name="" value="" placeholder="Q13.00">
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Oferta Q130.00</h2>
+                      <div>
+                        <button class="btn-2 btn-block" type="button" onclick="location.href='ofertar.html'">Enviar Oferta</button>
+                      </div>
+                    </div>
+                  </div>
                  </div>
                </section>
             </main>
          </div>
       </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="closeX">X</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <!-- jquery js -->
+      <script src="js/jquery.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- main js -->
+      <script src="js/main.js"></script>
    </body>
 </html>
