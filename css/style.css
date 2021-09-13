@@ -1,7 +1,7 @@
 /*---------------
 Fonts
 ----------------*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,700;0,900;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,700;0,900;1,200&display=swap');
 /*---------------
 Global Css
 ----------------*/
@@ -23,9 +23,9 @@ Global Css
 }
 body {
   /* font-family: 'Nunito', sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
 }
 .section-padding {
   padding: 70px;
@@ -78,7 +78,7 @@ NavBar
   position: relative;
 }
 .navbar .nav-item .nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -346,20 +346,20 @@ Banner
 /*---------------
 ofertaSocio
 ----------------*/
-.cardHeader{
+.cardHeader {
   background-color: var(--main-color);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   height: 60px;
 }
-.profile{
+.profile {
   border-radius: 50%;
   position: absolute;
   top: 10px;
   left: 25px;
   max-width: 70px;
 }
-.badge{
+.badge {
   background-color: var(--main-color);
   color: var(--black-000);
   position: relative;
@@ -369,16 +369,16 @@ ofertaSocio
   border: 2px solid rgba(255, 255, 255, 1);
   height: 25px;
 }
-.card-body{
+.card-body {
   background-color: var(--black-000);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.card-body i{
+.card-body i {
   position: relative;
   top: 2px;
 }
-.socioName{
+.socioName {
   position: relative;
   left: 95px;
   top: 5px;
@@ -386,14 +386,14 @@ ofertaSocio
   font-weight: 700;
   font-size: 25px;
 }
-.verificadoSocio{
+.verificadoSocio {
   position: relative;
   left: 95px;
   top: 0px;
   color: var(--black-000);
   font-size: 10px;
 }
-.ratingSocio{
+.ratingSocio {
   text-align: right;
   color: var(--black-000);
   font-size: 25px;
@@ -401,46 +401,46 @@ ofertaSocio
   top: -40px;
   right: 15px;
 }
-.detalleSocio{
+.detalleSocio {
   position: relative;
   top: -10px;
 }
-.ofertaPrecio{
+.ofertaPrecio {
   position: relative;
   top: -25px;
   text-align: center;
   font-weight: 700;
 }
-.ofertaPrecio-1{
+.ofertaPrecio-1 {
   color: var(--main-color);
   position: relative;
   top: 5px;
 }
-.ofertaPrecio-2{
+.ofertaPrecio-2 {
   color: var(--main-color);
   font-size: 10px;
   position: relative;
   top: -15px;
 }
-.botonesOferta{
+.botonesOferta {
   position: relative;
   top: -10px;
   display: flex;
   justify-content: center;
   display: inline-block;
 }
-.modal-content  {
+.modal-content {
   -webkit-border-radius: 30px !important;
   -moz-border-radius: 30px !important;
   border-radius: 30px !important;
 }
-.modal-header{
+.modal-header {
   background-color: var(--main-color);
   border-top-left-radius: 30px !important;
   border-top-right-radius: 30px !important;
   height: 140px;
 }
-.imgModal{
+.imgModal {
   position: relative;
   left: 30%;
   top: 20%;
@@ -451,7 +451,7 @@ ofertaSocio
   justify-content: center;
   height: 110px;
 }
-.socioInformation span{
+.socioInformation span {
   background-color: var(--main-color);
   border: 2px solid var(--black-000);
   color: var(--black-000);
@@ -462,12 +462,12 @@ ofertaSocio
   width: 30px;
   text-align: center;
 }
-.socioInformation h2{
+.socioInformation h2 {
   color: var(--main-color);
   position: absolute;
   top: 55px;
 }
-.socioInformation p{
+.socioInformation p {
   position: absolute;
   top: 90px;
   color: var(--black-400);
@@ -477,13 +477,14 @@ ofertaSocio
 .avatarProfile {
   border-radius: 50%;
   position: absolute;
-  top: -50px;
+  top: -75px;
+  max-width: 100px;
 }
 .socioLogros {
   padding-left: 35px;
   padding-right: 35px;
 }
-.socioLogros span{
+.socioLogros span {
   background-color: var(--main-color);
   color: var(--black-000);
   display: flex;
@@ -494,7 +495,7 @@ ofertaSocio
   font-size: 30px;
   font-weight: 200;
 }
-.socioLogros p{
+.socioLogros p {
   color: var(--black-400);
   font-size: 14px;
   font-weight: 200;
@@ -505,12 +506,12 @@ ofertaSocio
   height: 155px;
   overflow-y: scroll;
 }
-.socioComent h4{
+.socioComent h4 {
   color: var(--black-400);
   font-size: 16px;
   font-weight: 700;
 }
-.socioComent p{
+.socioComent p {
   color: var(--black-400);
   font-size: 12px;
   font-weight: 200;
@@ -734,7 +735,7 @@ select {
   border-color: var(--main-color);
   box-shadow: none;
 }
-input[type="file"] {
+input[type='file'] {
   display: none;
 }
 .custom-file-upload {
@@ -1104,5 +1105,3 @@ Responsive
     padding: 70px 0px 0px 0px;
   }
 }
-
-
