@@ -170,6 +170,9 @@ body {
   color: var(--black-900);
   background-color: var(--black-000);
 }
+.btn-2:focus{
+  outline: 0;
+}
 /*---------------
 NavBar
 ----------------*/
@@ -345,7 +348,7 @@ ofertarCaja
   padding-bottom: 15px;
 }
 .ofertarCajaW h2{
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 40px;
   font-weight: 700;
