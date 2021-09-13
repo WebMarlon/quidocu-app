@@ -22,7 +22,10 @@ Global Css
   --black-alpha-100: rgba(0, 0, 0, 0.05);
 }
 body {
-  font-family: "Nunito", sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 .section-padding {
   padding: 70px;
@@ -63,7 +66,7 @@ NavBar
 .navbar .navbar-brand {
   color: var(--black-000);
   font-weight: 900;
-  font-size: 30px;
+  font-size: 25px;
 }
 .navbar .nav-item {
   margin-left: 20px;
@@ -94,13 +97,22 @@ Home
 ----------------*/
 .home {
   background-color: #dce3f0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: auto;
+  padding: 3rem 0rem 3rem 0rem !important;
   padding: 0;
+  position: relative;
 }
 .iconos-social {
   position: absolute;
-  top: 85px;
+  top: 75px;
   left: 160px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: auto;
 }
 .iconos-social .href {
   text-decoration: none;
@@ -119,7 +131,6 @@ Home
 }
 .image-home img {
   width: 50%;
-  animation: fadeInLeft;
   animation-duration: 2s;
 }
 .titulo-home h1 {
@@ -127,7 +138,7 @@ Home
   color: var(--main-color);
   font-weight: 700;
   line-height: 40px;
-  animation: fadeInRight;
+  /* animation: fadeInRight; */
   animation-duration: 2s;
 }
 .titulo-home span {
@@ -138,7 +149,7 @@ Home
 }
 .buscar input {
   height: 70px;
-  width: 800px;
+  /* width: 800px; */
   border: 3px solid var(--main-color);
   border-radius: 50px;
   padding: 0 0 0 80px;
@@ -146,15 +157,17 @@ Home
   outline: none;
   color: var(--black-400);
   font-size: 18px;
+  /* new */
 }
 .buscar input:focus {
   box-shadow: none;
-  border-color: var(--black-400);
+  /* border-color: var(--black-400); */
+  border-color: var(--main-color);
 }
 .iconoInput {
   position: absolute;
   font-size: 30px;
-  left: 180px;
+  left: 5%;
   padding-top: 20px;
 }
 .inputDonde {
@@ -172,12 +185,17 @@ Lo mas buscado
   text-align: center;
   padding-bottom: 20px;
 }
+
 .ima-servisios img {
-  height: 150px;
   margin: 0;
   animation: heartBeat;
+  animation-duration: 0s;
   animation-duration: 2s;
+  border-radius: 50% !important;
+  width: 150px;
+  height: 150px;
 }
+
 .ima-servisios .imaServicios:hover {
   animation: heartBeat;
   animation-duration: 2s;
@@ -235,59 +253,6 @@ Banner
   transition: all 0.5s ease;
   font-weight: 200;
 }
-.btn-4 {
-  background-color: var(--black-900);
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  color: var(--black-000);
-  font-size: 16px;
-  text-align: center;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
-.btn-5 {
-  background-color: var(--black-000);
-  padding: 12px 30px;
-  border: 2px solid var(--black-000);
-  border-radius: 30px;
-  color: var(--black-900);
-  font-size: 16px;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
-.btn-6 {
-  background-color: var(--main-color);
-  padding: 12px 30px;
-  border: 2px solid var(--black-000);
-  border-radius: 30px;
-  color: var(--black-000);
-  font-size: 16px;
-  text-align: center;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
-.btn-7 {
-  background-color: var(--black-000);
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  color: var(--main-color);
-  font-size: 16px;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
-.btn-8 {
-  background-color: var(--main-color);
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  color: var(--black-000);
-  font-size: 16px;
-  text-align: center;
-  transition: all 0.5s ease;
-  font-weight: 200;
-}
 .btn-1:hover {
   color: var(--black-000);
   background-color: var(--main-color);
@@ -299,28 +264,6 @@ Banner
 .btn-3:hover {
   color: var(--black-000);
   background-color: var(--black-900);
-}
-.btn-4:hover {
-  color: var(--black-000);
-  background-color: var(--main-color);
-}
-.btn-5:hover {
-  color: var(--black-000);
-  background-color: var(--black-900);
-  border: 2px solid var(--black-000);
-}
-.btn-6:hover {
-  color: var(--black-000);
-  background-color: var(--black-900);
-  border: 2px solid var(--black-000);
-}
-.btn-7:hover {
-  color: var(--black-000);
-  background-color: var(--black-900);
-}
-.btn-8:hover {
-  color: var(--black-900);
-  background-color: var(--black-000);
 }
 /*---------------
 Video PopUp
@@ -445,7 +388,7 @@ Quien
 ----------------*/
 .quien {
   background-color: #dce3f0;
-  min-height: 100vh;
+  padding: 3rem 0rem 3rem 0rem !important;
   padding: 0;
 }
 .itemQuien {
@@ -612,179 +555,7 @@ cardCuanto
   color: var(--main-color);
   font-weight: 400;
 }
-/*---------------
-ofertaSocio
-----------------*/
-.cardHeader{
-  background-color: var(--main-color);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  height: 60px;
-}
-.profile{
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 25px;
-  max-width: 70px;
-}
-.badge{
-  background-color: var(--main-color);
-  color: var(--black-000);
-  position: relative;
-  z-index: 1;
-  top: -75px;
-  left: 40px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  height: 25px;
-}
-.card-body{
-  background-color: var(--black-000);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-.card-body i{
-  position: relative;
-  top: 2px;
-}
-.socioName{
-  position: relative;
-  left: 95px;
-  top: 5px;
-  color: var(--black-000);
-  font-weight: 700;
-  font-size: 25px;
-}
-.verificadoSocio{
-  position: relative;
-  left: 95px;
-  top: 0px;
-  color: var(--black-000);
-  font-size: 10px;
-}
-.ratingSocio{
-  text-align: right;
-  color: var(--black-000);
-  font-size: 25px;
-  position: relative;
-  top: -40px;
-  right: 15px;
-}
-.detalleSocio{
-  position: relative;
-  top: -10px;
-}
-.ofertaPrecio{
-  position: relative;
-  top: -25px;
-  text-align: center;
-  font-weight: 700;
-}
-.ofertaPrecio-1{
-  color: var(--main-color);
-  position: relative;
-  top: 5px;
-}
-.ofertaPrecio-2{
-  color: var(--main-color);
-  font-size: 10px;
-  position: relative;
-  top: -15px;
-}
-.botonesOferta{
-  position: relative;
-  top: -10px;
-  display: flex;
-  justify-content: center;
-  display: inline-block;
-}
-.modal-content  {
-  -webkit-border-radius: 30px !important;
-  -moz-border-radius: 30px !important;
-  border-radius: 30px !important;
-}
-.modal-header{
-  background-color: var(--main-color);
-  border-top-left-radius: 30px !important;
-  border-top-right-radius: 30px !important;
-  height: 140px;
-}
-.imgModal{
-  position: relative;
-  left: 30%;
-  top: 20%;
-  width: 40%;
-}
-.socioInformation {
-  display: flex;
-  justify-content: center;
-  height: 110px;
-}
-.socioInformation span{
-  background-color: var(--main-color);
-  border: 2px solid var(--black-000);
-  color: var(--black-000);
-  position: absolute;
-  top: -45px;
-  margin-left: 85px;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-}
-.socioInformation h2{
-  color: var(--main-color);
-  position: absolute;
-  top: 55px;
-}
-.socioInformation p{
-  position: absolute;
-  top: 90px;
-  color: var(--black-400);
-  font-size: 12px;
-  font-weight: 200;
-}
-.avatarProfile {
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-}
-.socioLogros {
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.socioLogros span{
-  background-color: var(--main-color);
-  color: var(--black-000);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  font-size: 30px;
-  font-weight: 200;
-}
-.socioLogros p{
-  color: var(--black-400);
-  font-size: 14px;
-  font-weight: 200;
-  margin-top: 10px;
-}
-.socioComent {
-  padding: 10px 20px 20px 10px;
-  height: 155px;
-  overflow-y: scroll;
-}
-.socioComent h4{
-  color: var(--black-400);
-  font-size: 16px;
-  font-weight: 700;
-}
-.socioComent p{
-  color: var(--black-400);
-  font-size: 12px;
-  font-weight: 200;
-  text-align: justify;
-}
+
 /*---------------
 Responsive
 ----------------*/
@@ -903,12 +674,12 @@ Ingreso metodoPago
 .contact-form h3 {
   color: var(--main-color);
   text-align: center;
-  weight: 700;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 .contact-form small {
   color: var(--black-400);
-  weight: 200;
+  font-weight: 200;
   font-size: 18px;
 }
 /*---------------
@@ -919,7 +690,17 @@ Login
   margin-bottom: auto;
   width: 400px;
   background-color: rgba(255, 255, 255) !important;
+  border-radius: 40px;
 }
+
+.card-header {
+  border-radius: 40px 40px 0px 0px !important;
+}
+
+.card-footer {
+  border-radius: 0px 0px 40px 40px !important;
+}
+
 .social_icon {
   position: absolute;
   right: 22px;
@@ -935,10 +716,9 @@ Login
   cursor: pointer;
 }
 .card-header h3 {
-  font-size: 30px;
-  font-weight: 700;
   color: var(--black-400);
 }
+
 .input-group-prepend span {
   width: 50px;
   border-radius: 30px;
@@ -1071,3 +851,4 @@ Responsive
   .quien {
     padding: 70px 0px 0px 0px;
   }
+}
