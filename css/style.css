@@ -642,6 +642,7 @@ Quien
 ----------------*/
 .quien {
   background-color: #dce3f0;
+  min-height: 100vh;
   padding: 3rem 0rem 3rem 0rem !important;
   padding: 0;
 }
@@ -668,6 +669,13 @@ Quien
 }
 .itemQuien h1 span {
   color: #91d5da;
+}
+/*---------------
+anuncioBanner-Quien
+----------------*/
+.anuncioBanner-quien{
+  align-content: center;
+  margin-top: 40px;
 }
 /*---------------
 Form
@@ -744,7 +752,7 @@ input[type='file'] {
   box-shadow: var(--shadow-black-100);
   border: 1px solid transparent;
   border-radius: 30px;
-  height: 140px;
+  height: 80px;
   width: 260px;
   text-align: center;
   vertical-align: middle;
